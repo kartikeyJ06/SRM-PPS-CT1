@@ -6,7 +6,6 @@ This simply works by taking three user inputs grouped into one scanf() function.
 
 
 
-QUES:2)
-
+project 2:
 TASK:
 Write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
