@@ -3,10 +3,7 @@
 QUES:1)
 
 TASK:
-Given a positive integer denoting n , do the following:
-
-If 0<n<9 , print the lowercase English word corresponding to the number (e.g., one for 1 , two for 2 , etc.).
-If n>9 , print Greater than 9.
+This simply works by taking three user inputs grouped into one scanf() function. These are seperated into valueOne, valueTwo and the operator (choice of *,/,+,-,^). A switch statement is then used in order to run the right calculation for the given operator. Mess around with the code and change bits here and there.
 
 
 
