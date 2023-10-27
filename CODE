@@ -3,37 +3,43 @@
 #include <string.h>
 #include <math.h>
 
-
 int main(int argc, char *argv[])
 {
   float valueOne;
   float valueTwo;
-  char operator;
+  char operation; // Change variable name from "operator" to "operation"
   float answer;
 
   printf("Enter calculation:\n\n");
-  scanf("%f %c %f", &valueOne, &operator, & valueTwo);
+  scanf("%f %c %f", &valueOne, &operation, &valueTwo); // Corrected the variable name
 
-  switch(operator)
-    {
-    case '/': answer = valueOne/valueTwo;
+  switch(operation) // Corrected the variable name
+  {
+    case '/':
+      answer = valueOne / valueTwo;
       break;
-    case '*': answer = valueOne*valueTwo;
+    case '*':
+      answer = valueOne * valueTwo;
       break;
-    case '+': answer = valueOne+valueTwo;
+    case '+':
+      answer = valueOne + valueTwo;
       break;
-    case '-': answer = valueOne-valueTwo;
+    case '-':
+      answer = valueOne - valueTwo;
       break;
-    case '^': answer = pow(valueOne,valueTwo);
+    case '^':
+      answer = pow(valueOne, valueTwo);
       break;
-    case ' ': answer = sqrt(valueTwo);
+    case ' ': // Not sure what you intend to do with this case
+      answer = sqrt(valueTwo);
       break;
-    default: goto fail;
-    }
-  printf("%.9g%c%.9g =  %.6g\n\n",valueOne,operator, valueTwo, answer);
+    default:
+      goto fail;
+  }
+  printf("%.9g%c%.9g = %.6g\n\n", valueOne, operation, valueTwo, answer); // Corrected the variable name
   goto exit;
- fail:
+fail:
   printf("Fail.\n");
- exit:
+exit:
   return 0;
 }
